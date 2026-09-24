@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Conteúdos | Açucenna Abreu — Psicóloga</title>
+<meta name="description" content="Psicologia para além do consultório: reflexões sobre saúde emocional, relações e experiências da vida, por Açucenna Abreu, psicóloga CRP 11/26124.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="./site-config.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;background:#F8F3EC;color:#3A2F2A;font-family:'Jost',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#A85A3D;text-decoration:none}
+a:hover{color:#7E4029}
+*{box-sizing:border-box}
+</style>
+</helmet>
+<div style="background:#F8F3EC;overflow:hidden;font-weight:300">
+<dc-import name="SiteHeader" hint-size="100%,150px"></dc-import>
+<main>
+<section data-screen-label="Hero" style="position:relative;overflow:hidden;background:#F1E9DF;padding:clamp(64px,8vw,104px) clamp(20px,6vw,96px);text-align:center">
+  <div style="position:absolute;left:-6%;top:-20%;width:36%;height:90%;border-radius:50%;background:radial-gradient(ellipse,rgba(212,184,130,0.45),rgba(212,184,130,0) 70%);filter:blur(10px);pointer-events:none"></div>
+  <div style="position:absolute;right:-6%;bottom:-30%;width:40%;height:100%;border-radius:50%;background:radial-gradient(ellipse,rgba(214,140,110,0.38),rgba(214,140,110,0) 70%);filter:blur(10px);pointer-events:none"></div>
+  <div style="position:relative;max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px">
+    <nav aria-label="Você está em" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:12px;letter-spacing:0.06em;color:#7A6A5E">
+      <a href="/" style="color:#7A6A5E">Início</a><span>/</span><span>Conteúdos</span>
+    </nav>
+    <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(36px,4.6vw,54px);line-height:1.08;color:#3A2F2A;text-wrap:balance">Psicologia para além do consultório</h1>
+    <div style="width:40px;height:1px;background:#C99A84"></div>
+    <p style="margin:0;font-size:clamp(15px,1.3vw,17px);line-height:1.75;color:#5E4F45;text-wrap:pretty">Reflexões sobre saúde emocional, relações e experiências que fazem parte da vida.</p>
+  </div>
+</section>
+
+<section data-screen-label="Artigos" style="background:#FBF8F3;padding:clamp(64px,8vw,104px) clamp(20px,6vw,96px)">
+  <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(28px,3vw,36px)">
+    <article id="como-diminuir-a-autocobranca" style="display:flex;flex-direction:column;gap:14px">
+      <div style="aspect-ratio:6/5;width:100%"><image-slot id="post-1" shape="rect" placeholder="images/conteudo-autocobranca.jpg" style="width:100%;height:100%"></image-slot></div>
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D;padding-top:6px">Autocobrança</span>
+      <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1.2;color:#3A2F2A;text-wrap:balance">Como diminuir a autocobrança?</h2>
+      <p style="margin:0;font-size:14px;line-height:1.7;color:#5E4F45;text-wrap:pretty">Uma reflexão sobre exigências, expectativas e a forma como você se trata.</p>
+      <span style="font-size:12px;letter-spacing:0.06em;color:#7A6A5E">Artigo em breve</span>
+    </article>
+    <article id="quando-a-ansiedade-ocupa-espaco-demais" style="display:flex;flex-direction:column;gap:14px">
+      <div style="aspect-ratio:6/5;width:100%"><image-slot id="post-2" shape="rect" placeholder="images/conteudo-ansiedade.jpg" style="width:100%;height:100%"></image-slot></div>
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D;padding-top:6px">Ansiedade</span>
+      <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1.2;color:#3A2F2A;text-wrap:balance">Quando a ansiedade começa a ocupar espaço demais?</h2>
+      <p style="margin:0;font-size:14px;line-height:1.7;color:#5E4F45;text-wrap:pretty">Sobre perceber como a ansiedade aparece no dia a dia e quando buscar escuta.</p>
+      <span style="font-size:12px;letter-spacing:0.06em;color:#7A6A5E">Artigo em breve</span>
+    </article>
+    <article id="autoestima-e-a-forma-como-voce-se-trata" style="display:flex;flex-direction:column;gap:14px">
+      <div style="aspect-ratio:6/5;width:100%"><image-slot id="post-3" shape="rect" placeholder="images/conteudo-autoestima.jpg" style="width:100%;height:100%"></image-slot></div>
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D;padding-top:6px">Autoestima</span>
+      <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;line-height:1.2;color:#3A2F2A;text-wrap:balance">Autoestima também é sobre a forma como você se trata.</h2>
+      <p style="margin:0;font-size:14px;line-height:1.7;color:#5E4F45;text-wrap:pretty">Um olhar para a relação que você constrói consigo mesmo.</p>
+      <span style="font-size:12px;letter-spacing:0.06em;color:#7A6A5E">Artigo em breve</span>
+    </article>
+  </div>
+</section>
+
+<section data-screen-label="Instagram" style="background:#EFE7DC;padding:clamp(56px,7vw,88px) clamp(20px,6vw,96px)">
+  <div style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:520px">
+      <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,2.8vw,34px);line-height:1.2;color:#3A2F2A;text-wrap:balance">Enquanto os artigos não chegam, as reflexões continuam no Instagram.</h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px">
+      <a href="https://www.instagram.com/psi.assucennaabreu/" target="_blank" style="color:#A85A3D;border:1px solid #C99A84;font-size:13px;letter-spacing:0.08em;padding:14px 24px;min-height:48px;display:inline-flex;align-items:center;white-space:nowrap" style-hover="border-color:#A85A3D;color:#7E4029">Seguir @psi.assucennaabreu</a>
+      <a href="{{ wa }}" target="_blank" style="background:#A85A3D;color:#FFFFFF;font-size:13px;letter-spacing:0.08em;padding:14px 24px;min-height:48px;display:inline-flex;align-items:center;white-space:nowrap" style-hover="background:#8E4A31;color:#FFFFFF">Agendar uma conversa</a>
+    </div>
+  </div>
+</section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,260px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { if (!window.SITE) this._t = setInterval(() => { if (window.SITE) { clearInterval(this._t); this.forceUpdate(); } }, 50); }
+  componentWillUnmount() { clearInterval(this._t); }
+  renderVals() { return { wa: (window.SITE && window.SITE.WHATSAPP_URL) || '#' }; }
+}
+</script>
+</body>
+</html>

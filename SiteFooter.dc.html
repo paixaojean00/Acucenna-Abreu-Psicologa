@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<footer style="background:#FBF8F3;border-top:1px solid #E6DBCD;padding:clamp(48px,6vw,64px) clamp(20px,6vw,96px) 28px;font-family:'Jost',sans-serif;font-weight:300">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:32px">
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#3A2F2A">Açucenna Abreu</span>
+      <span style="font-size:13px;color:#5E4F45">Psicóloga</span>
+      <span style="font-size:13px;color:#5E4F45">CRP 11/26124</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:13px">
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D">Contato</span>
+      <a href="{{ wa }}" target="_blank" style="color:#3A2F2A;text-decoration:none">WhatsApp</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:13px">
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D">Instagram</span>
+      <a href="https://www.instagram.com/psi.assucennaabreu/" target="_blank" style="color:#3A2F2A;text-decoration:none">@psi.assucennaabreu</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3A2F2A">
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#A85A3D">Atendimento</span>
+      <span>Psicoterapia para adolescentes e adultos</span>
+      <span>Abordagem Centrada na Pessoa</span>
+    </div>
+  </div>
+  <div style="max-width:1100px;margin:40px auto 0;padding-top:20px;border-top:1px solid #EFE6DA;font-size:12px;color:#7A6A5E;display:flex;flex-wrap:wrap;gap:4px 8px">
+    <span>© 2026 Açucenna Abreu.</span><span>Todos os direitos reservados.</span>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;260px&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { if (!window.SITE) this._t = setInterval(() => { if (window.SITE) { clearInterval(this._t); this.forceUpdate(); } }, 50); }
+  componentWillUnmount() { clearInterval(this._t); }
+  renderVals() { return { wa: (window.SITE && window.SITE.WHATSAPP_URL) || '#' }; }
+}
+</script>
+</body>
+</html>
